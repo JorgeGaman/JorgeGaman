@@ -1,5 +1,5 @@
 [![Typing SVG](https://readme-typing-svg.demolab.com?font=Fira+Code&size=24&pause=1000&color=21A131&center=true&vCenter=true&width=450&lines=Welcome+to+my+GitHub+bio+)](https://git.io/typing-svg)<h1 align="center">
-  <b>Jorge L. – Full-Stack Developer Jr | Software Engineer</b>
+  <b>Jorge L. – Jr. Full-Stack Developer | Software Engineer</b>
 </h1>
 
 <p align="center"><samp>
