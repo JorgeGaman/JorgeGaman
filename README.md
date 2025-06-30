@@ -3,7 +3,7 @@
 </h1>
 
 <p align="center"><samp>
-I'm Jorge L, an Information Systems Engineer passionate about full-stack development, data-driven systems, and scalable software architecture.  
+I'm Jorge L, an Software Engineer passionate about full-stack development, data-driven systems, and scalable software architecture.  
 I specialize in building modern web applications with technologies like Node.js, React, SQL, and Python, and have a growing interest in data science, cloud platforms, and cybersecurity.  
 My work bridges clean system design with practical solutions—from platforms to event-driven apps—always focused on intuitive UX and performance. 🚀  
  
