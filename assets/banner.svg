@@ -1,0 +1,136 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="880" height="260" viewBox="0 0 880 260" role="img" aria-labelledby="title desc">
+  <title id="title">Jorge López — Full-Stack Software Engineer</title>
+  <desc id="desc">Animated banner. Rotating taglines: Full-Stack Software Engineer; Building production-ready web applications; Modernizing legacy systems; Backend, Frontend and Infrastructure. On the right, a small network of UI, API, database, AI and cloud nodes with data pulses moving between them.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0b0c0e"/>
+      <stop offset="1" stop-color="#11141a"/>
+    </linearGradient>
+    <linearGradient id="name" x1="0" y1="0" x2="1" y2="0" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#f0a43a"/>
+      <stop offset="0.45" stop-color="#f0a43a"/>
+      <stop offset="0.5" stop-color="#fff1d6"/>
+      <stop offset="0.55" stop-color="#f0a43a"/>
+      <stop offset="1" stop-color="#e8e8ea"/>
+      <animateTransform attributeName="gradientTransform" type="translate" values="-1 0;1 0;1 0" keyTimes="0;0.6;1" dur="6s" repeatCount="indefinite"/>
+    </linearGradient>
+    <pattern id="dots" width="22" height="22" patternUnits="userSpaceOnUse">
+      <circle cx="1" cy="1" r="1" fill="#24262c"/>
+    </pattern>
+    <radialGradient id="fade" cx="0.78" cy="0.5" r="0.55">
+      <stop offset="0" stop-color="#fff" stop-opacity="1"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+    </radialGradient>
+    <mask id="grid-mask"><rect width="880" height="260" fill="url(#fade)"/></mask>
+    <filter id="glow" x="-200%" y="-200%" width="500%" height="500%">
+      <feGaussianBlur stdDeviation="3" result="b"/>
+      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <clipPath id="card"><rect width="880" height="260" rx="16"/></clipPath>
+
+    <path id="p1" d="M540 80 C600 80 620 130 680 130"/>
+    <path id="p2" d="M680 130 C740 130 760 75 820 75"/>
+    <path id="p3" d="M680 130 C740 130 760 195 820 195"/>
+    <path id="p4" d="M560 200 C610 200 630 130 680 130"/>
+    <path id="p5" d="M540 80 C500 115 505 170 560 200"/>
+  </defs>
+
+  <style>
+    text { font-family: "IBM Plex Sans", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif; }
+    .mono { font-family: "Fira Code", "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+    .eyebrow { font-size: 13px; fill: #9a9ba3; }
+    .name { font-size: 46px; font-weight: 700; letter-spacing: -0.5px; }
+    .tag { font-size: 17px; fill: #3fb950; opacity: 0; animation: cycle 12s infinite both; }
+    .t2 { animation-delay: 3s; } .t3 { animation-delay: 6s; } .t4 { animation-delay: 9s; }
+    @keyframes cycle {
+      0% { opacity: 0; transform: translateY(10px); }
+      3%, 22% { opacity: 1; transform: translateY(0); }
+      25%, 100% { opacity: 0; transform: translateY(-10px); }
+    }
+    .prompt { font-size: 17px; fill: #f0a43a; }
+    .cursor { fill: #3fb950; animation: blink 1s steps(1) infinite; }
+    @keyframes blink { 50% { opacity: 0; } }
+    .sub { font-size: 13px; fill: #9a9ba3; letter-spacing: 0.4px; }
+
+    .wire { fill: none; stroke: #24262c; stroke-width: 1.5; }
+    .flow { fill: none; stroke: #f0a43a; stroke-opacity: 0.35; stroke-width: 1.5; stroke-dasharray: 2 10; animation: flow 1.6s linear infinite; }
+    @keyframes flow { to { stroke-dashoffset: -24; } }
+    .node { fill: #121317; stroke-width: 1.5; }
+    .label { font-size: 11px; font-weight: 600; fill: #e8e8ea; text-anchor: middle; dominant-baseline: central; }
+
+    @media (prefers-reduced-motion: reduce) {
+      .tag, .flow, .cursor { animation: none; }
+      .tag { opacity: 0; } .t1 { opacity: 1; }
+      .pulse, .ping { display: none; }
+    }
+  </style>
+
+  <g clip-path="url(#card)">
+    <rect width="880" height="260" fill="url(#bg)"/>
+    <rect width="880" height="260" fill="url(#dots)" mask="url(#grid-mask)"/>
+  </g>
+  <rect x="0.5" y="0.5" width="879" height="259" rx="16" fill="none" stroke="#24262c"/>
+
+  <!-- Left: identity -->
+  <text class="mono eyebrow" x="44" y="64">$ whoami</text>
+  <text class="name" x="42" y="118" fill="url(#name)">Jorge López</text>
+
+  <text class="mono prompt" x="44" y="162">›</text>
+  <g>
+    <text class="mono tag t1" x="64" y="162">Full-Stack Software Engineer</text>
+    <text class="mono tag t2" x="64" y="162">Building production-ready web applications</text>
+    <text class="mono tag t3" x="64" y="162">Modernizing legacy systems</text>
+    <text class="mono tag t4" x="64" y="162">Backend | Frontend | Infrastructure</text>
+  </g>
+
+  <text class="mono sub" x="44" y="212">PHP · Laravel · Vue · MySQL · Linux · CI/CD</text>
+  <rect class="cursor" x="44" y="222" width="8" height="2"/>
+
+  <!-- Right: system pulse -->
+  <g>
+    <use xlink:href="#p1" href="#p1" class="wire"/>
+    <use xlink:href="#p2" href="#p2" class="wire"/>
+    <use xlink:href="#p3" href="#p3" class="wire"/>
+    <use xlink:href="#p4" href="#p4" class="wire"/>
+    <use xlink:href="#p5" href="#p5" class="wire"/>
+    <use xlink:href="#p1" href="#p1" class="flow"/>
+    <use xlink:href="#p2" href="#p2" class="flow"/>
+    <use xlink:href="#p3" href="#p3" class="flow"/>
+    <use xlink:href="#p4" href="#p4" class="flow"/>
+    <use xlink:href="#p5" href="#p5" class="flow"/>
+  </g>
+
+  <g class="pulse" filter="url(#glow)">
+    <circle r="3.5" fill="#f0a43a">
+      <animateMotion dur="2.4s" repeatCount="indefinite"><mpath xlink:href="#p1" href="#p1"/></animateMotion>
+    </circle>
+    <circle r="3.5" fill="#3fb950">
+      <animateMotion dur="2.4s" begin="0.8s" repeatCount="indefinite"><mpath xlink:href="#p2" href="#p2"/></animateMotion>
+    </circle>
+    <circle r="3.5" fill="#58a6ff">
+      <animateMotion dur="2.8s" begin="1.2s" repeatCount="indefinite" keyPoints="1;0" keyTimes="0;1" calcMode="linear"><mpath xlink:href="#p3" href="#p3"/></animateMotion>
+    </circle>
+    <circle r="3.5" fill="#bc8cff">
+      <animateMotion dur="3s" begin="0.4s" repeatCount="indefinite"><mpath xlink:href="#p4" href="#p4"/></animateMotion>
+    </circle>
+    <circle r="3" fill="#f0a43a">
+      <animateMotion dur="3.4s" begin="1.6s" repeatCount="indefinite" keyPoints="1;0" keyTimes="0;1" calcMode="linear"><mpath xlink:href="#p5" href="#p5"/></animateMotion>
+    </circle>
+  </g>
+
+  <circle class="ping" cx="680" cy="130" r="26" fill="none" stroke="#f0a43a">
+    <animate attributeName="r" values="26;46" dur="2.4s" repeatCount="indefinite"/>
+    <animate attributeName="stroke-opacity" values="0.6;0" dur="2.4s" repeatCount="indefinite"/>
+  </circle>
+
+  <circle class="node" cx="540" cy="80" r="24" stroke="#58a6ff"/>
+  <text class="mono label" x="540" y="80">UI</text>
+  <circle class="node" cx="680" cy="130" r="26" stroke="#f0a43a"/>
+  <text class="mono label" x="680" y="130">API</text>
+  <circle class="node" cx="820" cy="75" r="24" stroke="#3fb950"/>
+  <text class="mono label" x="820" y="75">DB</text>
+  <circle class="node" cx="820" cy="195" r="24" stroke="#bc8cff"/>
+  <text class="mono label" x="820" y="195">AI</text>
+  <circle class="node" cx="560" cy="200" r="24" stroke="#9a9ba3"/>
+  <text class="mono label" x="560" y="200" style="font-size:9px">CLOUD</text>
+</svg>
